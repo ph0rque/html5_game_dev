@@ -1,3 +1,3 @@
-require 'file_s3rv3r'
+require './file_server'
 run Sinatra::Application
 
