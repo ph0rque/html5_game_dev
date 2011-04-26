@@ -1,10 +1,8 @@
 require 'rubygems'
 require 'sinatra'
 
-enable :static
-
 get '/' do
-  "Links to assigments coming shortly!"
+  "Links to assignments coming shortly!"
 end
 
 #get '/assignment/:assign_number' do
