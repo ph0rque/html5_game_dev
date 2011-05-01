@@ -1,0 +1,17 @@
+html, body {
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #554444;
+}
+
+
+#the-div {
+	margin: 5% auto;
+	width: 60%;
+	height: 60%;
+	padding: 1em;
+	border: 1em solid #261F1F;
+	background-color: #eeeeff;
+}
