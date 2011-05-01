@@ -4,24 +4,28 @@ $(this).keydown(function(e) {
   notice = $('#notice');
   
   if (key == 37) {
+    notice.css("background-color", '#eeeeff');
     notice.text("←");
     img.animate(
       {left: '-=10' },
       100
     );
   } else if (key == 38) {
+    notice.css("background-color", '#eeeeff');
     notice.text("↑");
     img.animate(
       {top: '-=10' },
       100
     );
   } else if (key == 39) {
+    notice.css("background-color", '#eeeeff');
     notice.text("→");
     img.animate(
       {left: '+=10' },
       100
     );
   } else if (key == 40) {
+    notice.css("background-color", '#eeeeff');
     notice.text("↓");
     img.animate(
       {top: '+=10' },
@@ -29,5 +33,6 @@ $(this).keydown(function(e) {
     );
   } else {
     notice.text("Sorry bub, that's not one of the arrow keys :~/");
+    notice.css("background-color", '#FF6448');
   }
 });
