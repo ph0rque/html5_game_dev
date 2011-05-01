@@ -6,7 +6,6 @@ html, body {
 	color: #554444;
 }
 
-
 #the-div {
 	margin: 5% auto;
 	width: 60%;
@@ -14,4 +13,10 @@ html, body {
 	padding: 1em;
 	border: 1em solid #261F1F;
 	background-color: #eeeeff;
+}
+
+#the-img {
+  position:relative;
+  left:0;
+  top:0;
 }

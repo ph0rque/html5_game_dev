@@ -1,13 +1,27 @@
 $(this).keydown(function(e) {
   key = e.keyCode;
+  img = $('#the-img');
+  
   if (key == 37) {
-    alert('You pressed the left arrow.');
+    img.animate(
+      {left: '-=10' },
+      100
+    );
   } else if (key == 38) {
-    alert('You pressed the up arrow.');
+    img.animate(
+      {top: '-=10' },
+      100
+    );
   } else if (key == 39) {
-    alert('You pressed the right arrow.');
+    img.animate(
+      {left: '+=10' },
+      100
+    );
   } else if (key == 40) {
-    alert('You pressed the down arrow.');
+    img.animate(
+      {top: '+=10' },
+      100
+    );
   } else {
     //do nothing
   }
