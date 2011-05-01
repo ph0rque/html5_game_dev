@@ -6,6 +6,8 @@ $(this).keydown(function(e) {
   if (key == 37) {
     notice.css("background-color", '#eeeeff');
     notice.text("←");
+    
+    img.stop();
     img.animate(
       {left: '-=10' },
       100
@@ -13,6 +15,8 @@ $(this).keydown(function(e) {
   } else if (key == 38) {
     notice.css("background-color", '#eeeeff');
     notice.text("↑");
+    
+    img.stop();
     img.animate(
       {top: '-=10' },
       100
@@ -20,6 +24,8 @@ $(this).keydown(function(e) {
   } else if (key == 39) {
     notice.css("background-color", '#eeeeff');
     notice.text("→");
+    
+    img.stop();
     img.animate(
       {left: '+=10' },
       100
@@ -27,6 +33,8 @@ $(this).keydown(function(e) {
   } else if (key == 40) {
     notice.css("background-color", '#eeeeff');
     notice.text("↓");
+    
+    img.stop();
     img.animate(
       {top: '+=10' },
       100
