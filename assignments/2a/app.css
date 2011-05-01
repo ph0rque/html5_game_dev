@@ -10,10 +10,21 @@ html, body {
 	margin: 5% auto;
 	width: 60%;
 	height: 60%;
-	padding: 1em;
-	border: 1em solid #261F1F;
+	padding: 15px;
+	border: 15px solid #261F1F;
 	background-color: #eeeeff;
 }
+
+#notice {
+	margin: 5% auto;
+	width: 60%;
+	padding: 15px;
+	border: 15px solid #261F1F;
+	background-color: #eeeeff; /*FF6448 for shock value*/
+	text-align:center;
+	font-size:150%;
+}
+
 
 #the-img {
   position:relative;
