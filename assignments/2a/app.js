@@ -1,9 +1,9 @@
 var img = $('#the-img');
 var notice = $('#notice');
 
-//var x_y = img.position();
-var y = img.position().top;
-var x = img.position().left;
+var x_y = img.position();
+var y = x_y.top;
+var x = x_y.left;
 
 var max_x = $('the-div').width(); // - img.width();
 var max_y = $('the-div').height(); // - img.height();
@@ -16,23 +16,23 @@ $(this).keydown(function(event) {
   if (key == 37) {
     change_notice(notice, "←" + " x:" + x + " y:" + y, 'ok')
     
-    x - 10 < 0 ? x = 0 : x -= 10;
+    x - 10 <= 0 ? x = 0 : x -= 10;
     move(event, img, x, y);
         
   } else if (key == 38) {
     change_notice(notice, "↑" + " x:" + x + " y:" + y, 'ok')
     
-    y - 10 < 0 ? y = 0 : y -= 10;
+    y - 10 <= 0 ? y = 0 : y -= 10;
     move(event, img, x, y);
   } else if (key == 39) {
     change_notice(notice, "→" + " x:" + x + " y:" + y, 'ok')
     
-    x + 10 > max_x ? x = max_x : x += 10;
+    x + 10 >= max_x ? x = max_x : x += 10;
     move(event, img, x, y);
   } else if (key == 40) {
     change_notice(notice, "↓" + " x:" + x + " y:" + y, 'ok')
     
-    y + 10 > max_y ? y = max_y : y += 10;
+    y + 10 >= max_y ? y = max_y : y += 10;
     move(event, img, x, y);
 
   } else {
@@ -49,12 +49,12 @@ function change_notice(notice, content, status) {
     notice.text(content);
 }
 
-function move(event, img, x, y) {
+function move(event, img, ex, yy) {
   event.preventDefault();
 
   img.css(
     {
-      top: y,
-      left: x
+      top: yy,
+      left: ex
     });
 }
