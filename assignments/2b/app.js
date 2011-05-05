@@ -1,9 +1,9 @@
 var img = $('#the-img');
 var notice = $('#notice');
 
-//var x_y = img.position();
-var y = 0 // y u no work? x_y.top;
-var x = 0 //same here... x_y.left;
+
+var y = 0;
+var x = 0;
 
 var max_x = $('#the-div').width() - img.width();
 var max_y = $('#the-div').height() - img.height();
@@ -23,17 +23,17 @@ $('#the-div').mouseout(function(event) {
 });
 
 function move(x, y) {
+  img.stop();
 
   if (x > max_x) {x = max_x}
   if (y > max_y) {y = max_y}
   if (x < 0) {x = 0}
   if (y < 0) {y = 0}
     
-  img.css(
+  img.animate(
     {
       top: y,
       left: x
-    }
+    }, 100
   );
 }
-
