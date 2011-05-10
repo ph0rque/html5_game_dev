@@ -2,13 +2,13 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  "Links to assignments coming shortly!"
+  "Links to tasks, etc. coming shortly!"
 end
 
-get '/assignments/:number/:file' do
-  File.read(File.join('assignments', "#{params[:number]}", "#{params[:file]}"))
+get '/tasks/:number/:file' do
+  File.read(File.join('tasks', "#{params[:number]}", "#{params[:file]}"))
 end
 
-get '/assignments/:number' do
-  File.read(File.join('assignments', "#{params[:number]}", "index.html"))
+get '/tasks/:number' do
+  File.read(File.join('tasks', "#{params[:number]}", "index.html"))
 end
