@@ -7,19 +7,17 @@ html, body {
 }
 
 #the-div {
-	margin: 5% auto;
-	width: 60%;
-	height: 60%;
-	padding: 15px;
-	border: 15px solid #261F1F;
-	background-color: #eeeeff;
+  width: 1000;
+  height: 600;
+	margin: 0 auto;
+	border: 12px solid #261F1F;
 }
 
 #notice {
-	margin: 5% auto;
-	width: 60%;
-	padding: 15px;
-	border: 15px solid #261F1F;
+	margin: 24px auto;
+	width: 1000;
+	padding: 12px 0;
+	border: 12px solid #261F1F;
 	background-color: #eeeeff; /*FF6448 for shock value*/
 	text-align:center;
 	font-size:150%;
