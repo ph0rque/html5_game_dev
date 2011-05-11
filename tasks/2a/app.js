@@ -5,12 +5,42 @@ $(document).ready(function() {
   context.fillRect(0, 0, 1000, 600);
 
   context.beginPath();
+  context.moveTo(1000,0);
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.lineTo(1000,600);
+  context.lineTo(1000,0);
+  context.fillStyle = randColor();
+  context.fill();
+  
+  context.beginPath();
   context.moveTo(0,600);
   context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
   context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
   context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
   context.lineTo(1000,600);
   context.lineTo(0,600);
+  context.fillStyle = randColor();
+  context.fill();
+  
+  context.beginPath();
+  context.moveTo(0,0);
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.lineTo(0,600);
+  context.lineTo(0,0);
+  context.fillStyle = randColor();
+  context.fill();
+  
+  context.beginPath();
+  context.moveTo(1000,0);
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.bezierCurveTo(rand_x(), rand_y(), rand_x(), rand_y(), rand_x(), rand_y());
+  context.lineTo(0,0);
+  context.lineTo(1000,0);
   context.fillStyle = randColor();
   context.fill();
 });
