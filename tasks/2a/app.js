@@ -44,12 +44,11 @@ $(document).ready(function() {
   context.fillStyle = randColor();
   context.fill();
 });
-//  thing001.bezierCurveTo
 
 function rand_x() {return Math.floor (Math.random() * 1000 + 1);}
 function rand_y() {return Math.floor (Math.random() * 600 + 1);}
 function rand(maximum) {return Math.floor (Math.random() * maximum + 1);}
 
 function randColor() {
-  return "rgba(" + rand(255) + "," + rand(255) + "," + rand(255) + "," + rand(10)/10 + ")";
+  return "rgba(" + rand(255) + "," + rand(255) + "," + rand(255) + "," + rand(100)/100 + ")";
 }
